@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Stella | Software Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Poppins:wght@300;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a192f;
+            color: #8892b0;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Roboto Mono', monospace;
+            color: #64ffda;
+        }
+        
+        .hero-text {
+            font-size: 4rem;
+            line-height: 1.1;
+            font-weight: 600;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid #64ffda;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .skill-tag {
+            background-color: #172a45;
+            color: #64ffda;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .experience-card {
+            background-color: #172a45;
+            border-left: 3px solid #64ffda;
+            transition: transform 0.3s ease;
+        }
+        
+        .experience-card:hover {
+            transform: translateX(10px);
+        }
+        
+        .project-card {
+            background-color: #172a45;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-link {
+            color: #64ffda;
+            border-bottom: 1px solid #64ffda;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: #ffffff;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+<body class="p-8">
+    <header class="mb-16">
+        <h1 class="hero-text text-white mb-4">Lucas Stella</h1>
+        <p class="text-2xl text-gray-400">Full-Stack Developer & Software Engineer</p>
+        <p class="text-xl text-gray-500 mt-2">4+ Years of Professional Experience</p>
+    </header>
+
+    <nav class="mb-16">
+        <a href="#about" class="mr-6 contact-link">About</a>
+        <a href="#experience" class="mr-6 contact-link">Experience</a>
+        <a href="#skills" class="mr-6 contact-link">Skills</a>
+        <a href="#projects" class="mr-6 contact-link">Projects</a>
+        <a href="#contact" class="contact-link">Contact</a>
+    </nav>
+
+    <main>
+        <section id="about" class="mb-16">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-lg">
+                Passionate software engineer with over 4 years of experience in full-stack development, 
+                test automation, and creating intuitive user interfaces. I excel in collaborative 
+                environments, tackling complex problems, and delivering high-quality software solutions.
+            </p>
+        </section>
+
+        <section id="experience" class="mb-16">
+            <h2 class="section-title">Experience</h2>
+            <div class="space-y-8">
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-bold mb-2">Senior Test Automation Engineer</h3>
+                    <p class="text-sm mb-2">Becton Dickinson | 03/2024 - Present</p>
+                    <ul class="list-disc list-inside">
+                        <li>Spearhead E2E testing strategies for biomedical research applications</li>
+                        <li>Reduced testing time by 50% through strategic improvements</li>
+                        <li>Refactor POM code using advanced TypeScript typing</li>
+                        <li>Implement BDD testing with Gherkin, Cucumber-JS, and Playwright</li>
+                    </ul>
+                </div>
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-bold mb-2">Development Tools Software Engineer</h3>
+                    <p class="text-sm mb-2">Intel | 12/2021 - 03/2024</p>
+                    <ul class="list-disc list-inside">
+                        <li>Designed and implemented tools for next-gen IPU support</li>
+                        <li>Built and tested features for low-level CLI tools</li>
+                        <li>Led architecture for Electron-powered GUI application</li>
+                        <li>Contributed to agile workflow optimization</li>
+                    </ul>
+                </div>
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-bold mb-2">Freelance Software Engineer</h3>
+                    <p class="text-sm mb-2">Invate | 06/2021 - 12/2021</p>
+                    <ul class="list-disc list-inside">
+                        <li>Developed multithreaded app for industrial machinery logging</li>
+                        <li>Processed 50,000+ sq ft of flooring data, saving thousands per order</li>
+                        <li>Created intuitive UIs for real-time and historical data visualization</li>
+                    </ul>
+                </div>
+                <div class="experience-card p-6">
+                    <h3 class="text-xl font-bold mb-2">Software Engineering Intern</h3>
+                    <p class="text-sm mb-2">Becton Dickinson | 06/2019 - 09/2020</p>
+                    <ul class="list-disc list-inside">
+                        <li>Developed front-end component library for biomedical research tool</li>
+                        <li>Added legacy project file support to existing application</li>
+                        <li>Expanded test coverage framework for functional and non-functional aspects</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-16">
+            <h2 class="section-title">Skills</h2>
+            <div class="flex flex-wrap gap-4">
+                <span class="skill-tag">Agile Methodologies</span>
+                <span class="skill-tag">Web Development</span>
+                <span class="skill-tag">UI/UX</span>
+                <span class="skill-tag">System Architecture</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">ReactJS</span>
+                <span class="skill-tag">WebSockets</span>
+                <span class="skill-tag">Javascript</span>
+                <span class="skill-tag">Electron</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">AWS</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">MongoDB</span>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Protein Residue Interaction Analysis</h3>
+                        <p>Analyzed hemoglobin protein structures for residue interactions</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Recipro</h3>
+                        <p>Recipe browsing website with MySQL and REST API backend</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Portfolio Page</h3>
+                        <p>Single-page application showcasing work samples</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Wildfire Survey System</h3>
+                        <p>Led capstone project for drone-based wildfire survey system</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="mb-16">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="mb-4">I'm always open to discussing new projects and opportunities!</p>
+            <div class="space-x-4">
+                <a href="mailto:lucas.stella13@gmail.com" class="contact-link">Email</a>
+                <a href="https://www.linkedin.com/in/lucas-stella" target="_blank" class="contact-link">LinkedIn</a>
+                <a href="https://github.com/thestellarL" target="_blank" class="contact-link">GitHub</a>
+                <a href="https://www.lstelladev.com" target="_blank" class="contact-link">Portfolio</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center text-sm">
+        <p>&copy; 2024 Lucas Stella. All rights reserved.</p>
+    </footer>
+</body>
+</html>
